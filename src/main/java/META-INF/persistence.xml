@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <class>ru.vsu.football.entity.CityEntity</class>
+        <class>ru.vsu.football.entity.CoachEntity</class>
+        <class>ru.vsu.football.entity.MatchEntity</class>
+        <class>ru.vsu.football.entity.PlayerEntity</class>
+        <class>ru.vsu.football.entity.RoleEntity</class>
+        <class>ru.vsu.football.entity.StadiumEntity</class>
+        <class>ru.vsu.football.entity.TeamEntity</class>
+        <class>ru.vsu.football.entity.TicketEntity</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost:5432/football"/>
+            <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/football"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost:5432/football"/>
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost:5432/football"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
